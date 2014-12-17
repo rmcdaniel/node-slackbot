@@ -13,21 +13,19 @@ $ npm install --save node-slackbot
 ## Usage
 
 ```js
-var node-slackbot = require('node-slackbot');
+var slackbot = require('node-slackbot');
 
-node-slackbot('Rainbow');
+var bot = new slackbot('token_goes_here');
+
+bot.use(function(message, cb) {
+  if ('message' == message.type) {
+    console.log(message.user + ' said: ' + message.text);
+  }
+  cb();
+});
+
+bot.connect();
 ```
-
-```sh
-$ npm install --global node-slackbot
-$ node-slackbot --help
-```
-
-```sh
-# creates a browser.js
-$ npm run browser
-```
-
 
 ## License
 
