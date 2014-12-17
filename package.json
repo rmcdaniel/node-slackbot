@@ -1,0 +1,40 @@
+{
+  "name": "node-slackbot",
+  "version": "0.0.1",
+  "description": "Slackbot for node.js using RTM API.",
+  "author": {
+    "name": "Richard McDaniel",
+    "email": "richard.mcdaniel@uah.edu"
+  },
+  "repository": "rmcdaniel/node-slackbot",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "node-slackbot",
+    "slack",
+    "bot",
+    "slackbot"
+  ],
+  "dependencies": {
+    "async": "^0.9.0",
+    "querystring": "^0.2.0",
+    "ws": "^0.6.3"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0",
+    "browserify": "^7.0.0"
+  },
+  "scripts": {
+    "test": "grunt",
+    "browser": "browserify index.js > browser.js"
+  }
+}
