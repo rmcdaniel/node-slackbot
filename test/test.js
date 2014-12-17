@@ -1,11 +1,11 @@
 /*global describe, it */
 'use strict';
 var assert = require('assert');
-var nodeSlackbot = require('../');
+var slackbot = require('../');
 
 describe('node-slackbot node module', function () {
-    it('must have at least one test', function () {
-        nodeSlackbot();
-        assert(false, 'I was too lazy to write any tests. Shame on me.');
+    it('must return itself', function () {
+        var self = new slackbot();
+        assert(self instanceof slackbot, 'slackbot returned something other than itself');
     });
 });
