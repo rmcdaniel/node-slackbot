@@ -1,7 +1,7 @@
 {
   "name": "node-slackbot",
   "main": "./lib/slackbot.js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Slackbot for node.js using RTM API.",
   "author": {
     "name": "Richard McDaniel",
